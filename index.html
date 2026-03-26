@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/6a600c20a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+            <nav>
+            <div class="logo">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="180"
+    height="80"
+    viewBox="0 0 300 200"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <style>
+      .og { fill: #ffffff; font-weight: 700; }
+      .devs { fill: #b1587a; font-weight: 500; }
+      .funds { fill: #e71655; font-weight: 500; }
+  </style>
+
+    <text x="10" y="120" font-size="90" font-family="Segoe UI, Arial, sans-serif">
+      <tspan class="og">OG</tspan>
+      <tspan class="funds">funds</tspan>
+      <tspan class="dev"> Dev.</tspan>
+    </text>
+  </svg>
+</div>
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-list" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <Br><Br><Br>
+            <h5><span>Welcome to</span><br>my portfolio</h5>
+            <h3>I'm <span>Henry</span><br>Archibong From Nigeria</h3>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="image/header-bg.png" alt="about image">                      
+            </div>  
+            <div class="about-col-2">
+                <h2 class="sub-titles">About Me</h2>
+                <p>I am a passionate and detail-driven Web Developer.dedicated to building modern, responsive, and user-focused digital experiences. With a strong foundation in front-end and back-end development, I enjoy turning ideas into functional, visually appealing, and scalable solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing websites and Apps</li>
+                        <li><span>Web-Developer</span><br>web app development</li>
+                        <li><span>App-Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>UI/UX Training @ p-dollars institute</li>
+                        <li><span>2019 - 2021</span><br>team lead @ Mercor.com-online</li>
+                        <li><span>2016 - 2017</span><br>internship at Everest PLC.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Training @ P-dollars Institute</li>
+                        <li><span>2016-Developer</span><br>MBA from MIT Lagos</li>
+                        <li><span>2014</span><br>MBA from ISM Lagos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services-Section -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-titles">My Services</h1>
+        <div class="services-list">     
+<div>
+   <i class="fa-solid fa-crop"></i>
+    <h2>Web design</h2>
+    <P>I provide modern and responsive web design that ensures your website looks exceptional on all devices. From clean layouts to intuitive navigation, every design is crafted to enhance user experience and reflect your brand identity with clarity and precision.</P>
+    <a href="#">Learn more</a>
+</div>
+<div>
+    <i class="fa-solid fa-code"></i>
+    <h2>UI/UX Design</h2>
+    <P>I offer professional UI/UX design services focused on creating intuitive, visually appealing, and user-centered digital experiences. By combining modern design principles with user research, wireframing, and interactive prototyping, I ensure every interface is not only beautiful but also functional, accessible, and easy to navigate—ultimately helping your brand deliver a seamless and enjoyable experience across all platforms.</P>
+    <a href="#">Learn more</a>
+</div>   
+<div>
+    <i class="fa-brands fa-app-store"></i>
+    <h2>App design</h2>
+    <P>I provide expert app design services that blend creativity with functionality to deliver intuitive, high-performing mobile experiences. From user flow planning to visually engaging interfaces and interactive prototypes, each design is crafted to ensure seamless navigation, strong usability, and a polished look that aligns with your brand—helping you launch apps that users love to engage with.</P>
+    <a href="#">Learn more</a>
+</div>
+</div>
+</div>
+</div>
+<!-- ...My Work Section... -->
+<div id="portfolio" class="portfolio-Section">
+  <div class="container">
+    <h1 class="sub-titles">My Work</h1>
+
+    <div class="work-list">
+      <div class="work">
+        <img src="image/web.jpg" alt="Social Media App">
+        <div class="layer">
+          <h5>Shopping Sites</h5>
+          <p>The app enable users to connect, buy product, communicate instantly, and build online product value across diverse platforms</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="image/UX.jpg" alt="Eatry App">
+        <div class="layer">
+          <h5>Company Website and Apps</h5>
+          <p>apps is used to showcase a business, provide information, promote products or services, and enable customer interaction or transactions.**
+</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="image/app.jpg" alt="Resource App">
+        <div class="layer">
+          <h5>Resource Apps</h5>
+          <p>The app help users access, organize, and manage essential tools, information, and materials quickly and efficiently.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#"class="btn">See More</a>
+  </div>
+</div>
+<!-- ...contact form... -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope-circle-check"></i> archibonghenry38@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 08108517901</p>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/owai.echu"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://x.com/HenryArchi69756"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/johnsonhenryarchibong/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/henry-archibong-30366238a"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <a href="image/Dev CV.pdf" download class="btn">Download CV</a>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="contact-right">
+        <h1 class="sub-title">Get in Touch</h1>
+        <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello! I'm always open to new opportunities and connections.</p>
+        <p>Fill out the form below, and I'll get back to you as soon as possible.</p>
+
+        <form action="https://formspree.io/f/mwvweabq" method="POST" id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea rows="8" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Send Message</button>
+        </form>
+
+        <div id="form-message" style="text-align: center; margin: 15px 0; font-weight: 600;"></div>
+        <div style="text-align: center; margin-top: 20px;">
+          <a href="mailto:archibonghenry38@gmail.com?subject=Contact%20From%20Portfolio&body=Hello%20Henry" class="btn btn2" style="display: inline-block;">Email Me Directly</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div id="copyright">
+        <div class="container">
+            <div class="copyright">
+<p>Copyright &copy; 2025 - Designed by Henry Archibong</p>
+            </div>
+        </div>
+</div>
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){ 
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+       
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const contactForm = document.getElementById('contact-form');
+  const formMessage = document.getElementById('form-message');
+
+  function setMessage(text, isError = false) {
+    formMessage.textContent = text;
+    formMessage.style.color = isError ? '#d9534f' : '#28a745';
+  }
+
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      setMessage('Please complete all required fields with valid values.', true);
+      contactForm.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(contactForm);
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        setMessage('Your message has been sent successfully! Thank you.');
+        contactForm.reset();
+      } else {
+        setMessage('Oops! Something went wrong. Please try again later.', true);
+      }
+    })
+    .catch(() => {
+      setMessage('Network error: could not send message. Please try again later.', true);
+    });
+  });
+</script>
+</body>
+</html>

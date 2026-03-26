@@ -1,0 +1,54 @@
+.header-text{
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+    background: #4e1628;
+    position: fixed;
+    top: 0; 
+    right: -200px; /* or -250px if menu width is 200px */
+    width: 100px;
+    height: 50vh; /* full screen height */
+    padding-top: 50px;
+    border-radius: 20px;
+    z-index: 2;
+    transition: right 0.5s; /* add smooth slide */
+}
+
+nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-2{
+        font-size: 30px;
+    }
+    .tab-links{
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .contact-left, .content-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+    font-size: 14px;
+    }
+}

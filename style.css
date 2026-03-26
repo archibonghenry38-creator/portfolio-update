@@ -1,0 +1,566 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* use relative path and simple filename for GitHub pages */
+    background-image: url("image/header-bg.png");
+    background-size: cover; /* fill the header area */
+    background-position: center;
+}
+
+
+.logo svg {
+  width: 80px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+}
+
+nav ul li a{
+    color: #141313;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #ff004f;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+} 
+
+.header-text{
+    margin-top: 20px;
+    font-size: 60px;
+}  
+
+.header-text h5 span{
+    font-size: 40px;
+    color: #050505;
+    margin-top: 20px;
+}
+
+.header-text h3 span{
+    color: #ff004f;
+}
+
+#About{
+    padding: 80px 0;
+    color: #ababab;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-col-2 p {
+    flex-basis: 60%;
+    text-align: justify;         /* Makes edges align left & right */
+    line-height: 1.8;            /* Adds better spacing between lines */
+    font-size: 17px;             /* Comfortable reading size */
+    word-spacing: 1px;           /* Improves justification spacing */
+
+}
+
+.sub-titles{
+    font-size: 35px;
+    font-weight: 650;
+    color: #0cf0ac;
+    margin-bottom: 0;
+}
+
+/* removed stray rule that was not valid CSS */
+
+
+
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;  
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+} 
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#services{
+    padding: 10px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;                /* modern replacement for grid-gap */
+    margin-top: 50px;
+}
+.services-list h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: #fdfcfd;
+}
+
+/* target only the immediate service cards */
+.services-list > div{
+    background: #2b292a;
+    padding: 40px;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list > div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.services-list > div i{
+    font-size: 50px;
+    color: #fffefe;
+    margin-bottom: 20px;
+}
+.services-list > div h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.services-list > div a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.5s, color 0.5s;
+}
+
+
+/* ...existing code... */
+
+#portfolio, .portfolio-Section{
+    padding: 50px 0;
+}
+#portfolio .sub-titles, .portfolio-Section .sub-titles{
+    color: rgb(0, 255, 242);
+    margin-bottom: 70px;
+}
+
+/* work cards */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.work{
+    position: relative; /* ensures .layer is positioned inside each card */
+    overflow: hidden;
+    border-radius: 10px;
+}
+.work img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+.layer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0; /* covers its .work parent */
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    transform: translateY(100%); /* optional: hide by default */
+    transition: transform 0.2s;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.work:hover .layer{
+    transform: translateY(0);
+}
+.layer h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.layer p{
+    font-size: 11px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 45px;
+    background: #fff;
+    width: 60px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;   
+}
+.work:hover img{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #d42acc;
+    display: inline-block;
+    border: 2px solid #ee0a43;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.5s, color 0.5s;
+    width: fit-content;
+    transition: background 0.5s, color 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+    color: #fff;
+}
+
+
+/* ...contact-left... */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex-basis: 45%;
+}
+
+.contact-right {
+  flex-basis: 50%;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #bb02e9;
+    font-size: 25px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: color 0.5s, transform 0.5s;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2download Cv {
+
+    
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.5s, color 0.5s;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: #2b292a;
+    color: #fff;
+    resize: none;
+}
+.btn{
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 25px 25px;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    background: #2b292a;
+    margin-top: 20px;
+}
+/*...........css for small screen...................*/
+nav .fa-solid {
+  display: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Show menu icons only on small screens */
+@media only screen and (max-width: 768px) {
+  nav .fa-solid {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: #111;
+    width: 200px;
+    height: 100vh;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1000;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #fff;
+  }
+}
+
+}
+@media only screen and (max-width: 768px) {
+  .about-col-2 p {
+    font-size: 3px;           /* Slightly smaller on mobile */
+    text-align: justify;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 30px 6%;
+  }
+
+  /* HEADER */
+  #header {
+    height: auto;
+    background-size: cover;
+  }
+
+  .header-text {
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .header-text p {
+    color: #0cf0ac;
+  }
+
+  .header-text h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  /* NAV MENU */
+  nav ul {
+    width: 100px;
+    height: 40vh;
+    background: #fffdfe;
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+
+  nav ul li {
+    margin: 15px;
+    font-size: 5%;
+  }
+
+  /* ABOUT SECTION */
+  .row {
+    flex-direction: column;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-col-2 p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .tab-links {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  /* SERVICES */
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-list > div {
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  /* PORTFOLIO */
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+
+  .layer h5 {
+    font-size: 16px;
+  }
+
+  .layer p {
+    font-size: 13px;
+  }
+
+  /* CONTACT */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
